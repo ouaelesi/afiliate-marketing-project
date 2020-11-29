@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS -->
+        <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      />
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+      <!-- Popper JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <link rel="stylesheet" href="../css/index.css" />
+      <link rel="stylesheet" href="../css/blogs.css">
+    <title>Document</title>
+</head>
+<body>
+  <!-- BUTTON TO THE TOP -->
+    <a href="#quotes" id="gotop" class="d-none d-sm-block"
+    ><div class="position-fixed gotop pt-1 pl-2">
+      <i class="fa fa-chevron-up fa-2x"></i></div
+  ></a>
+  <!-- HEADER -->
+  <nav
+    class="navbar navbar-expand-lg navbar-light bg-muted fixed-top"
+    id="mynav"
+  >
+    <a class="navbar-brand" href="../index.html"
+      ><img src="../assets/logos/logo.png" alt="logo" class="header-logo"
+    /></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav position-absolute r-0">
+        <li class="nav-item dropdown mx-3">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <strong>BUSINESS</strong>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown mx-3">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <strong>TECHNOLOGY</strong>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown mx-3">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <strong> HUMAN DEV</strong>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link active" href="#"><strong>BLOGS</strong></a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link" href="#contact"><strong>CONTACT</strong></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- BLOG PAGE -->
+  <div>
+    <div class="page-title mt-5">
+      <div class="blogs-title">
+        <div class="text-center"><h1 class="text-light">BLOGS</h1></div>
+        <div class="row">
+        <div class="col-md-4 d-none d-md-block">
+              <div class="icon text-center">
+                <img src="../assets/icons/business-icon.png" alt="bussiness-icon" />
+                <h2 class="icon-title mt-4"><strong>BUSINESS</strong></h2>
+               
+              </div>
+        </div>
+        <div class="col-4 d-none d-md-block">     <div class="icon text-center">
+          <img src="../assets/icons/teq-icon.png" alt="technologhy-icon" />
+          <h2 class="icon-title mt-3"><strong>TECHNOLOGY</strong></h2>
+          
+        </div></div>
+        <div class="col-4 d-none d-md-block">     <div class="icon text-center">
+          <img src="../assets/icons/humamdev-icon.png" alt="human-icon" />
+          <h2 class="icon-title"><strong>HUMAN DEV</strong></h2>
+        </div>
+      </div>
+      <div class="col-4 d-block d-md-none mt-5 icon-btn"> <button class="btn btn-primary">BUSINESS</button></div>
+      <div class="col-4 d-block d-md-none mt-5 icon-btn"> <button class="btn btn-primary">BUSINESS</button></div>
+      <div class="col-4 d-block d-md-none mt-5 icon-btn"> <button class="btn btn-primary">BUSINESS</button></div>
+      </div>
+    </div> 
+    </div>
+    <div class="mail-box">
+      <div class="row px-2 px-md-5">
+        <div class="col-12 col-md-5 px-5">
+          <div
+          class=" px-2 contact my-5 text-center"
+          id="contact"
+        >
+          <div>
+            <img
+              src="../assets/icons/mail-icon.png"
+              alt="emailicon"
+              class="emailicon"
+            /><br /><br />
+          </div>
+          <form class="form">
+            <h4>
+              Get free Business plans, helpful courses and guided books
+              delivered directly to your inbox
+            </h4>
+            <div class="form-group input">
+              <input type="email" class="" placeholder="Email" />
+            </div>
+            <button type="submit" class="btn subscribe">
+              <strong>SUBSCRIBE</strong>
+            </button>
+          </form>
+        </div>
+        </div>
+      </div>
+    </div>
+       <div class="container-fluid">
+         
+         <div class="row py-3"> <div class="col-1 col-md-4"></div><div class="col-0 col-md-4"></div>
+         <div class="col-11 col-md-4 d-flex search-form "><input type="search" placeholder="Search">
+          <i class="fa fa-search fa-2x"></i>
+        </div>   
+         </div>
+         <div class="row mt-5">
+          <div class="col-9">
+        <h5><strong><a href="../index.html" class="text-dark">HOME</a>  > <b-link href="" class="text-success">BLOGS</b-link></strong></h5>    
+          </div>
+        </div> 
+        <hr>
+         <div class="row">
+           <div class="col-12 col-md-6 col-xl-4 mt-5">
+            <div class="card ">
+              <div class="card-img">
+                <div class="img-container"></div>
+                <div class="type text-center"><strong>BUSINESS</strong></div>
+                <div class="type-title text-center"><i class="fa fa-star fa-2x mt-1"></i></div>
+              </div>
+            
+              <div class="card-body">
+                <h5 class="card-title"><strong>12 Best Products to Sell in 2020 [Trending]</strong></h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="./blog1.html" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>   
+           </div>
+           <div class="col-12 col-md-6 col-xl-4 mt-5">
+            <div class="card ">
+              <div class="card-img">
+                <div class="img-container" style="background-image: url(../assets/htmlbasics.jpg);"></div>
+                <div class="type text-center"><strong>BUSINESS</strong></div>
+                <div class="type-title text-center"><i class="fa fa-star fa-2x mt-1"></i></div>
+              </div>
+            
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>   
+           </div>
+           <div class="col-12 col-md-6 col-xl-4 mt-5">
+            <div class="card ">
+              <div class="card-img">
+                <div class="img-container" style="background-image: url(../assets/java-script.jpg);"></div>
+                <div class="type text-center"><strong>BUSINESS</strong></div>
+                
+              </div>
+            
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>   
+           </div>
+           <div class="col-12 col-md-6 col-xl-4 mt-5">
+            <div class="card ">
+              <div class="card-img">
+                <div class="img-container" style="background-image: url(../assets/css.jpg);"></div>
+                <div class="type text-center"><strong>BUSINESS</strong></div>
+              </div>
+            
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>   
+           </div>
+           <div class="col-12 col-md-6 col-xl-4 mt-5">
+            <div class="card ">
+              <div class="card-img">
+                <div class="img-container" style="background-image: url(../assets/coding.jpg);"></div>
+                <div class="type text-center"><strong>BUSINESS</strong></div>
+                <div class="type-title text-center"><i class="fa fa-star fa-2x mt-1"></i></div>
+              </div>
+            
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>   
+           </div>
+           <div class="col-12 col-md-6 col-xl-4 mt-5">
+            <div class="card ">
+              <div class="card-img">
+                <div class="img-container" style="background-image: url(../assets/sport.jpg);"></div>
+                <div class="type text-center"><strong>BUSINESS</strong></div>
+              </div>
+            
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>   
+           </div>
+           <div class="col-12 col-md-6 col-xl-4 mt-5">
+            <div class="card ">
+              <div class="card-img">
+                <div class="img-container" style="background-image: url(../assets/baylee-gramling-xWzIy_vo0YE-unsplash.jpg);"></div>
+                <div class="type text-center"><strong>BUSINESS</strong></div>
+                <div class="type-title text-center"><i class="fa fa-star fa-2x mt-1"></i></div>
+              </div>
+            
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>   
+           </div>
+           <div class="col-12 col-md-6 col-xl-4 mt-5">
+            <div class="card ">
+              <div class="card-img">
+                <div class="img-container"></div>
+                <div class="type text-center"><strong>BUSINESS</strong></div>
+                <div class="type-title text-center"><i class="fa fa-star fa-2x mt-1"></i></div>
+              </div>
+            
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>   
+           </div>
+           <div class="col-12 col-md-6 col-xl-4 mt-5">
+            <div class="card ">
+              <div class="card-img">
+                <div class="img-container"></div>
+                <div class="type text-center"><strong>BUSINESS</strong></div>
+              </div>
+            
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>   
+           </div>
+           
+        </div>
+        
+        <div class="next-previous my-5">
+          <a href=""><button class="btn btn-previous mx-3"><strong>Previous </strong></button></a>
+          <a href=""><button class="btn btn-next"> <strong>Next</strong></button></a>
+        </div>
+        </div>
+       </div>
+  </div>
+  <!-- FOOTER -->
+  <div class="footer text-center">
+    <div class="row">
+      <div class="col-md-4">
+        <p class="footer-texts">
+          <br /><br /><strong
+            >© 2020 EDU Hustle All Rights Reserved. <br /><br />
+            FOLLOW US ON MEDIA</strong
+          >
+        </p>
+        <i class="fa fa-facebook fa-2x mx-2"></i
+        ><i class="fa fa-instagram fa-2x mx-2"></i
+        ><i class="fa fa-twitter fa-2x mx-2"></i
+        ><i class="fa fa-linkedin fa-2x mx-2"></i
+        ><i class="fa fa-youtube fa-2x mx-2"></i>
+      </div>
+      <div class="col-md-4 footer-logo">
+        <img src="../assets/logos/logo-white.png" alt="log" />
+      </div>
+      <div class="col-md-4">
+        <h4 class="footer-titles"><strong>About EDU Hustle</strong></h4>
+        <p class="footer-texts">
+          <strong>
+            Most of my content includes affiliate links. When you click an
+            affiliate link, I may receive a commission for any products or
+            services you purchase through that link. It doesn’t cost you
+            anything extra, and in some cases, you may receive a discount
+            through my links.</strong
+          >
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="../js/index.js"></script>
+</body>
+</html>
