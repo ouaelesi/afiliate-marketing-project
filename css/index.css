@@ -6,6 +6,7 @@
     margin: 0px 0px 0px 0px;
   }
   body {
+    /* font-family: GalanoGrotesqueAlt,Helvetica Neue,Helvetica,Arial,sans-serif; */
     background-image: url("../assets/illustrations/body-bg.png");
     background-repeat: none;
     background-size: cover;
