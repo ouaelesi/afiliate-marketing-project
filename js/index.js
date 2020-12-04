@@ -1,3 +1,4 @@
+var blue_color ="#2aa9df", light_color ="#f7f7f7";
 window.onscroll = function () {
     scrollFunction();
     scrollFunction2();
@@ -32,4 +33,17 @@ window.onscroll = function () {
     else{
       document.getElementById("tab-content").classList.remove('sticky-tabcontent');
     }
+  }
+
+  function display_terminaluse(x){
+    x.style.backgroundColor=blue_color; 
+    document.getElementById("desk-btn").style.backgroundColor=light_color;
+    document.getElementById("terminal-use").classList.remove("d-none");
+    document.getElementById("desktop-use").classList.add('d-none');
+  }
+  function display_desktopuse(x){
+    x.style.backgroundColor=blue_color; 
+    document.getElementById("terminal-btn").style.backgroundColor=light_color;
+    document.getElementById("terminal-use").classList.add("d-none");
+    document.getElementById("desktop-use").classList.remove('d-none');
   }

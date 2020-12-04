@@ -161,52 +161,64 @@
             <p>
                 By the end of the tutorial, we will have a website running at https: // <strong>{Your-Github-Username} .github.io </strong>   
             </p>
-            <p>
-                <strong class="text-success">NEEDS</strong> <br>
-                To complete this blog, you first need some familiarity with <br>
+         <div class="section">
+          <p>
+            <strong class="text-success">NEEDS</strong> <br>
+            To complete this blog, you first need some familiarity with <br>
 1.	HTML/CSS ( to build your project ) <br>
 If you want more details about this topic you will find some usefull information  <a href="">here</a> <br>
 2.	Using Git and Github ( to host your project ) <br>
-      If you want more details about this topic you will find some usefull information <a href="">here</a> 
+  If you want more details about this topic you will find some usefull information <a href="">here</a> 
 
-            </p>
+        </p>
+        
+         </div>
+         <strong class="text-dark">LET'S GET STARTED</strong> <br>
+           <div class="section">
             <p>
-                <strong class="text-success">LET'S GET STARTED</strong> <br>
-                <strong class="text-dark ml-5">What is github pages ?</strong> <br>
-            </p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/2MsN8gpT6jY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>
-                if you don’t have a github account yet go and check this <a href="">BLOG</a> you will find all details about github and how to creat a new account and how to push your first project.
-                
+              
+              <strong class="text-success">What is github pages ?</strong> <br>
+          </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/2MsN8gpT6jY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>
+              if you don’t have a github account yet go and check this <a href="">BLOG</a> you will find all details about github and how to creat a new account and how to push your first project.
+              
 
-            </p>
+          </p>
+          <div class="steps text-center"><strong>1</strong></div>
+           </div>
             <p>
                 So if you are reading this I thinks you already have an account lets get started : 
             </p>
-            <p>
-                <strong class="text-success">1-	Create A Github Repository</strong> <br>
-                To do this you need first to creat a new repository on your github: <br>
-                Head over to GitHub and create a new repository named <strong>username.github.io</strong>, where username is your username (or organization name) on GitHub.
-                So for example, my username is <strong>ouaelesi</strong> so my repository would be titled <strong>ouaelesi.github.io</strong> <br>
-                 <p class="text-warning">
-                    // If the first part of the repository doesn’t exactly match your username, it won’t work, so make sure to get it right.
-                 </p>
-                 
-            </p>
-            <img src="../assets/blogs/github-pages/new-repo.PNG" alt="Create A Github Repository">
+     <div class="section">
+      <p>
+        <strong class="text-success">Create A Github Repository</strong> <br>
+        To do this you need first to creat a new repository on your github: <br>
+        Head over to GitHub and create a new repository named <strong>username.github.io</strong>, where username is your username (or organization name) on GitHub.
+        So for example, my username is <strong>ouaelesi</strong> so my repository would be titled <strong>ouaelesi.github.io</strong> <br>
+         <p class="text-warning">
+            // If the first part of the repository doesn’t exactly match your username, it won’t work, so make sure to get it right.
+         </p>
+         
+    </p>
+    <img src="../assets/blogs/github-pages/new-repo.PNG" alt="Create A Github Repository">
+    <div class="steps text-center"><strong>2</strong></div>
+     </div>
+         
          <h2 class="text-center">
              <strong >Let me know what git client you use </strong>
          </h2>
           <div class="git-client-type my-5">
-            <button class="btn btn-light selected"><strong>A Terminal </strong></button>
-            <button class="btn btn-light"> <strong>GitHub Desktop</strong></button>
+            <button class="btn btn-light selected" id="terminal-btn" onclick="display_terminaluse(this)"><strong>A Terminal </strong></button>
+            <button class="btn btn-light" id="desk-btn" onclick="display_desktopuse(this)"> <strong>GitHub Desktop</strong></button>
           </div>
           <p>Once the repository is created, we will go ahead and clone the repository to folder where we want to store our project,
 
           </p>
           <div class="terminal-use" id="terminal-use">
-            <p>
-                <strong class="text-success">2- Clone the repository</strong> <br>
+            <div class="section">
+              <p>
+                <strong class="text-success"> Clone the repository</strong> <br>
                 To clone the repository, I copy the repository URL from new repository page on Github and then I run the following command
                 <div class="terminal">
                     <div class="header">
@@ -224,128 +236,160 @@ If you want more details about this topic you will find some usefull information
                    
                 </div>
             </p>
-            <p>
-                Once the repository is cloned, I change my current directory to the repository directory
-                <div class="terminal">
-                    <div class="header">
-            
-                    </div>
-                    <div class="shell">
-                        <p>
-                            <span class="path">~</span>
-                            <span class="prompt">$</span>
-                            cd faizanv.github.io
-                        </p>
-                      
-                        
-                    </div>
-                   
-                </div>
-            </p>
-            <p>
-                <strong class="text-success">3- HELLO WORLD</strong> <br>
-                Enter the project folder and add an index.html fill
-                <div class="terminal">
-                    <div class="header">
-            
-                    </div>
-                    <div class="shell">
-                       <p>  <span class="path">~</span>
-                        <span class="prompt">$</span>
-                        echo "Hello World" > index.html</p>
-                          
-                        
-                    </div>
-                   
-                </div>
-                <p>This command  “echo” means that you are writing “Hello World” on the file “index.html”
-                    With this we will have a website that displays a “Hello World” 
-               </p>
-
-            </p>
-            <p>
-                <strong class="text-success">4- Deployment</strong> <br>
-                Now to get the magic sauce, we can post your newly created website to Github Pages for the world to see! To do this, all we have to do is push the code we wrote so far to the Github repository we created earlier. <br>
-                - we use these simple steps:  <br>         
-            --> Add, commit, and push your changes:
+            <div class="steps text-center"><strong>3</strong></div>
+            </div>
+         <div class="section">
+          <p>
+            Once the repository is cloned, I change my current directory to the repository directory
             <div class="terminal">
                 <div class="header">
         
                 </div>
                 <div class="shell">
-                   <p>  <span class="path">~</span>
+                    <p>
+                        <span class="path">~</span>
+                        <span class="prompt">$</span>
+                        cd faizanv.github.io
+                    </p>
+                  
+                    
+                </div>
+               
+            </div>
+        </p>
+        <div class="steps text-center"><strong>4</strong></div>
+         </div>
+          <div class="section">
+            <p>
+              <strong class="text-success"> HELLO WORLD</strong> <br>
+              Enter the project folder and add an index.html fill
+              <div class="terminal">
+                  <div class="header">
+          
+                  </div>
+                  <div class="shell">
+                     <p>  <span class="path">~</span>
+                      <span class="prompt">$</span>
+                      echo "Hello World" > index.html</p>
+                        
+                      
+                  </div>
+                 
+              </div>
+              <p>This command  “echo” means that you are writing “Hello World” on the file “index.html”
+                  With this we will have a website that displays a “Hello World” 
+             </p>
+
+          </p>
+          <div class="steps text-center"><strong>5</strong></div>
+          </div>
+        <div class="section">
+          <p>
+            <strong class="text-success"> Deployment</strong> <br>
+            Now to get the magic sauce, we can post your newly created website to Github Pages for the world to see! To do this, all we have to do is push the code we wrote so far to the Github repository we created earlier. <br>
+            - we use these simple steps:  <br>         
+        --> Add, commit, and push your changes:
+        <div class="terminal">
+            <div class="header">
+    
+            </div>
+            <div class="shell">
+               <p>  <span class="path">~</span>
+                <span class="prompt">$</span>
+                git add --all
+            </p>
+                <p>  <span class="path">~</span>
                     <span class="prompt">$</span>
-                    git add --all
+                    git commit -m "Initial commit"
                 </p>
                     <p>  <span class="path">~</span>
                         <span class="prompt">$</span>
-                        git commit -m "Initial commit"
+                        git push -u origin main
                     </p>
-                        <p>  <span class="path">~</span>
-                            <span class="prompt">$</span>
-                            git push -u origin main
-                        </p>
-                    
-                </div>
-               
+                
             </div>
-            If you want more details about <strong>pushing projects to github repositories</strong> you can find it <a href="">here</a>
-            </p>
+           
+        </div>
+      </p>
+        <p>
+        If you want more details about <strong>pushing projects to github repositories</strong> you can find it <a href="">here</a>
+        </p>
+        <div class="steps text-center"><strong>6</strong></div>
+        </div>
 
           </div>
-          <div class="desktop-use " id="desktop-use">
-          <p>If you didn’t install github desktop go and install it via this <a href="https://desktop.github.com">link</a>  </p>
-          <p>Or if you want to know more about github desktop check this <a href="">blog</a> for more usefull informations </p>
-         <p>
-            <strong class="text-success">2- Clone the repository</strong> <br>  
-            Click the "Set up in Desktop" button. When the GitHub desktop app opens, save the project
-         </p>
-         <img src="../assets/blogs/github-pages/clone-desktop.PNG" alt="clone the repository with github desktop">
+          <div class="desktop-use d-none" id="desktop-use">
 
-         <p>
-            <strong class="text-success">3- Create an index file</strong> <br>
-            Grab your favorite text editor and add an index.html file to your project:
-            <div class="terminal">
-                <div class="header">
-        
-                </div>
-                <div class="shell">
-                <p>
-                    &lt! DOCTYPE html &gt <br>
-                    &lthtml&gt <br>
-                    &ltbody&gt <br>
-                    &lth1&gtHello World&lt/h1&gt <br>
-                    &ltp>I'm hosted with GitHub Pages.&lt/p&gt <br>
-                    &lt/body&gt <br>
-                    
-                </p>
-            
-                    
-            </div>
-               
-            </div>
-         </p>
-         <p>
-            <strong class="text-success">4- Commit & publish</strong> <br>
-            Commit & publish
+         <div class="section">
+          <p>
+            <strong class="text-success">Instalation</strong> <br>
+            If you didn’t install github desktop go and install it via this <a href="https://desktop.github.com">link</a>  </p>
+          <p>Or if you want to know more about github desktop check this <a href="">blog</a> for more usefull informations </p>
+          <div class="steps text-center"><strong>3</strong></div>
+         </div>
+<div class="section">
+  <p>
+    <strong class="text-success"> Clone the repository</strong> <br>  
+    Click the "Set up in Desktop" button. When the GitHub desktop app opens, save the project
+ </p>
+ <img src="../assets/blogs/github-pages/clone-desktop.PNG" alt="clone the repository with github desktop">
+ <div class="steps text-center"><strong>4</strong></div>
+</div>
+
+      <div class="section">
+        <p>
+          <strong class="text-success"> Create an index file</strong> <br>
+          Grab your favorite text editor and add an index.html file to your project:
+          <div class="terminal">
+              <div class="header">
+      
+              </div>
+              <div class="shell">
+              <p>
+                  &lt! DOCTYPE html &gt <br>
+                  &lthtml&gt <br>
+                  &ltbody&gt <br>
+                  &lth1&gtHello World&lt/h1&gt <br>
+                  &ltp>I'm hosted with GitHub Pages.&lt/p&gt <br>
+                  &lt/body&gt <br>
+                  
+              </p>
+          
+                  
+          </div>
+             
+          </div>
+       </p>
+       <div class="steps text-center"><strong>5</strong></div>
+      </div>
+    <div class="section">
+      <p>
+        <strong class="text-success">Commit & publish</strong> <br>
+        Commit & publish
 Enter the repository, commit your changes, and press the publish button.
 
-        </p>
-        <img src="../assets/blogs/github-pages/desktop-demo@2x.gif" alt="commit and publish on github desktop">
+    </p>
+    <img src="../assets/blogs/github-pages/desktop-demo@2x.gif" alt="commit and publish on github desktop">
+    <div class="steps text-center"><strong>6</strong></div>
+    </div>
 
           </div>
-          <p>
-            <strong class="text-success">…and you're done!</strong> <br>
-            Fire up a browser and go to https://username.github.io. Where you should be able to view your newly hosted website
-            
-          </p>
+          <div class="section">
+            <p>
+              <strong class="text-success">…and you're done!</strong> <br>
+              Fire up a browser and go to https://username.github.io. Where you should be able to view your newly hosted website
+              
+            </p>
+            <div class="steps text-center"><strong>end</strong></div>
+          </div>
+          
         <p>
             Hello World is now great, but you'll probably want to customize your website even more to your liking. Maybe you want to showcase your projects or have a way for people to see your resume; you can do it! You can add images, some cool links, and maybe even some JavaScript to make the page more interactive!
 For that, we have some of great blogs that can help you develop your skills and build some great projects
 
         </p>
-         
-
+            <!-- Resources -->
+            
             <!-- OTHER BLOGS -->
             <a href="../html/blogs.html" ><strong class="text-center"><h2>Other blogs</h2></strong></a>
   
@@ -364,18 +408,19 @@ For that, we have some of great blogs that can help you develop your skills and 
                 <strong>CONTENT</strong>
               </div>
               <div class="content">
-                <a href="#1">. Peel-off face mask</a> <br />
-                <a href="#2">. Nail polish</a> <br />
-                <a href="#3">. Exercise bands</a> <br />
-                <a href="#4">. Water bottles</a> <br />
-                <a href="#5">. Blankets</a> <br />
-                <a href="#6">. Yoga and pilates mats</a> <br />
-                <a href="#7">. Kayak accessories</a> <br />
-                <a href="#8">. Jigsaw puzzles</a> <br />
-                <a href="#9">. Kitchen and dining room furniture</a> <br />
-                <a href="#10">. Rugs</a> <br />
-                <a href="#11">. Board games</a> <br />
-                <a href="#12">. Laptop skins</a> <br />
+                <a href="#1">. Host Your Website With
+                  Github Pages</a> <br />
+                <a href="#2">. NEEDS</a> <br />
+                <a href="#3">. What is github pages ?</a> <br />
+                <a href="#4">. Create A Github Repository</a> <br />
+                <a href="#5">. Clone the repository</a> <br />
+                <a href="#6">. change my current directory</a> <br />
+                <a href="#7">. HELLO WORLD</a> <br />
+                <a href="#8">. Deployment</a> <br />
+                <a href="#9">. and you're done!</a> <br />
+                <a href="#10">. Resources</a> <br />
+                <a href="#11">. other Blogs</a> <br />
+                
               </div>
             </div>
           </div>
