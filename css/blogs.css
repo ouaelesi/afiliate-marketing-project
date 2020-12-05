@@ -82,17 +82,8 @@
   .img-container:hover {
     transform: scale(1.2);
   }
-  .btn-next {
-    color: white;
-    margin: auto 0;
-    background-color: var(--blue-color);
-    width: 120px;
-  }
-  .btn-previous {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.3);
-    width: 120px;
-  }
+ 
+
   .type {
     position: absolute;
     background-color: var(--blue-color);

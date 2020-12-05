@@ -2,18 +2,30 @@ var blue_color ="#2aa9df", light_color ="#f7f7f7";
 window.onscroll = function () {
     scrollFunction();
     scrollFunction2();
+    progress_div();
   };
+
+ 
+
+function progress_div() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
   
   function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       // document.getElementById('mynav').style.backgroundColor="rgba(0,0,100,0.7)"
       document.getElementById("mynav").style.boxShadow = "1px 0px 5px 0px rgba(0,0,0,0.3)";
       document.getElementById("mynav").style.height = "70px";
+      document.getElementById("progress-container").style.display="block";
      
     } else {
       document.getElementById("mynav").style.boxShadow = "0px 0px 0px 0px black";
       document.getElementById("mynav").style.height = "80px";
       document.getElementById("mynav").style.backgroundColor = "white";
+      document.getElementById("progress-container").style.display="none";
   
     }
   }
