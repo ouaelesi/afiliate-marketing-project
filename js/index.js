@@ -59,3 +59,15 @@ function progress_div() {
     document.getElementById("terminal-use").classList.add("d-none");
     document.getElementById("desktop-use").classList.remove('d-none');
   }
+  var btn = $('#gotop');
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 500) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+  });
+  btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '300');
+  });
