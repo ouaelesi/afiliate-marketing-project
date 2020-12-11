@@ -208,9 +208,13 @@ body{
 .other-blogs > .col-12{
     margin: 10px 0 10px 0;
 }
+.courses:hover{
+ transform: scale(1.05);
+ box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.3) ;
+}
 
   @media only screen and (max-width:700px) {
-      .blog{
+    .blog > :not(.type):not(.type-title){
           font-size: 1.3rem;
           line-height: 35px;
       }
