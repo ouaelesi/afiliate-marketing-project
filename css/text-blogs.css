@@ -36,13 +36,13 @@ body{
     border-radius: 5px;
 }
 .blog{
-    background-color: #f5f5f5;
+    background-color: rgba(250,250,250,0.95);
     margin: 10px 0px;
-    box-shadow: 2px 1px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3); */
 }
 .blog > :not(.type):not(.type-title){
 
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 400;
     -webkit-font-smoothing: auto;
     line-height: 40px;
@@ -202,21 +202,36 @@ body{
     color: var(--blue-color);
     font-size: 1rem;
 }
-.other-blogs{
+.other_blogs_section{
     font-size: 20px;
+}
+.other-blog:hover{
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
 }
 .other-blogs > .col-12{
     margin: 10px 0 10px 0;
 }
+.courses{
+    border-radius: 10px;
+}
 .courses:hover{
  transform: scale(1.05);
+ 
  box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.3) ;
+}
+.languages_section{
+    border-left-style: dotted;
+    padding-left: 20px;
+    margin-bottom: 50px;
 }
 
   @media only screen and (max-width:700px) {
     .blog > :not(.type):not(.type-title){
           font-size: 1.3rem;
           line-height: 35px;
+      }
+      .blog{
+          padding: 0px;
       }
       .title-container{
        font-size: 1.5rem;

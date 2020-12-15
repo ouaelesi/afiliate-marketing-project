@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../assets/logos/phone-logo.png"
+    />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/text-blogs.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="position-fixed gotop pt-1 pl-2" id="gotop">
+      <i class="fa fa-chevron-up fa-2x"></i>
+    </div>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-muted fixed-top"
+      id="mynav"
+    >
+      <a class="navbar-brand" href="../index.html"
+        ><img src="../assets/logos/logo.png" alt="logo" class="header-logo"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav position-absolute r-0">
+          <li class="nav-item dropdown mx-3">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <strong>BUSINESS</strong>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown mx-3">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <strong>TECHNOLOGY</strong>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown mx-3">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <strong> HUMAN DEV</strong>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="../html/blogs.html"
+              ><strong>BLOGS</strong></a
+            >
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#contact"><strong>CONTACT</strong></a>
+          </li>
+        </ul>
+      </div>
+      <div class="progress-container position-absolute" id="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+    </nav>
+    <div
+      class="img-container #top"
+      style="
+        background-image: url(../assets/blogs/intro_to_webdev/web-Development.jpg);
+      "
+    >
+      <div class="title-container text-center mt-5">
+        <div>
+          <strong
+            >Introduction to web developement <br />
+            [For beginners]</strong
+          >
+
+          <br />
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row mt-5">
+        <div class="col-9">
+          <h5>
+            <strong
+              ><a href="../index.html" class="text-dark">HOME</a> >
+              <a href="./blogs.html" class="text-dark">BLOGS</a> >
+              <b-link href="" class="text-success"
+                >Introduction to web developement [For beginners]</b-link
+              ></strong
+            >
+          </h5>
+        </div>
+        <div class="col-3">12min</div>
+      </div>
+      <hr />
+      <div class="row position-relative">
+        <div class="col-12 col-md-8 blog p-4 position-relative">
+          <!-- blog_title -->
+          <h1 class="text-center my-3 blog-title">
+            <strong
+              >Introduction to web developement <br />
+              [For beginners]
+            </strong>
+          </h1>
+          <!-- blog_body -->
+          <div class="row my-4">
+            <div class="col-12">
+              <img
+                src="../assets/blogs/intro_to_webdev/webdev.jpg"
+                alt="web developement"
+                width="100%"
+              />
+            </div>
+          </div>
+          <p>
+            In this blog you will gain a better idea of what is web development
+            and what a web developer actually does and what your life might look
+            like if you decided to take it on as a career or a side hustle.
+          </p>
+          <p>
+            Hopefully you will have the motivation to start learning web
+            development and start building your own project which will may be
+            very interesting and make you famous and rich.
+          </p>
+          <div class="section">
+            <b class="text-primary">What is Web Development ?</b>
+            <p>
+              // also known as web programming <br />
+              Web development is the process of creating websites and
+              applications for the Internet, or for a private network known as
+              an intranet. Web development is not concerned with website design;
+              Instead, it's all about the code and scripting that supports the
+              website's functionality. <br />
+
+              Web development can be divided into three layers: client-side
+              coding (front end) and server-side coding (backend)
+            </p>
+            <div class="pl-5">
+              <p>
+                <b>a- </b>Client-side (The front-end): Client-side code is
+                executed in a web browser and is directly related to what people
+                see and interact with when they visit a website. Things like
+                layout, fonts, colors, menus, and contact forms are all front
+                driven.
+              </p>
+              <p>
+                <b>b- </b>Server-side (The back-end): Server-side scripting, or
+                backend development, is about what happens behind the scenes.
+                The backend is basically a part of the website that the user
+                does not actually see. It is responsible for storing and
+                organizing the data, and making sure that everything on the
+                client side is running smoothly. It does this by communicating
+                with the front end. When something happens on the client side -
+                for example when a user enters their information to log in to a
+                website, that information is stored on the server using
+                server-side scripting
+              </p>
+            </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/GEfuOMzRgXo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="steps text-center"><strong>1</strong></div>
+          </div>
+          <div class="section">
+            <b class="text-primary"
+              >The difference between Web Development and Web Design:</b
+            >
+            <p>
+              You may hear the terms web development and web design used
+              interchangeably, but these are two completely different things.
+            </p>
+            <p>
+              Imagine a web designer and web developer working together to build
+              a machine: the developer will be concerned with the functional
+              components while the designer will be responsible for the visuals
+              - what the vehicle looks like - and the user experience that a
+              vehicle provides, whether it's a smooth drive or not
+            </p>
+            <p>
+              Web designers design how a site looks and feels. They represent
+              website layout, and they make sure it's logical, easy-to-use, and
+              fun to use. They think about all the different visual elements:
+              What color schemes and fonts will be used? What buttons, drop-down
+              menus, and scroll bars should be included, and where? What
+              interactive touch points does the user interact with to go from
+              point A to point B? Web design also takes into account the
+              information structure of a site, and determines what content to
+              include and where to place it. <br />Web design is a very broad
+              field, and it is often broken down into more specific roles such
+              as user experience design, user interface design and information
+              engineering.
+            </p>
+            <p>
+              It is the job of a web developer to take this design and develop
+              it into a fully functional live website. The front end developer
+              takes the visual design as provided by the web designer and builds
+              it using markup languages like HTML, CSS, and JavaScript. Backend
+              developer builds most advanced website functionality, like
+              ecommerce website checkout functionality.
+              <br />
+              => In short, a web designer is the engineer, while a web developer
+              is the builder or engineer
+            </p>
+            <div class="steps text-center"><strong>2</strong></div>
+          </div>
+          <div class="section">
+            <b class="text-primary"> History of Web Development: </b>
+            <br />
+            <img
+              src="../assets/blogs/intro_to_webdev/history_of_webdev.PNG"
+              alt=""
+            />
+            <div class="steps text-center"><strong>3</strong></div>
+          </div>
+          <div class="section">
+            <b class="text-primary">What Does a Web Developer Do?</b>
+            <p>
+              The role of a web developer is to create and maintain websites.
+              Web developers can work at home or independently, and the specific
+              tasks and responsibilities will vary depending on whether they
+              work as a front-end, back-end, or full-stack developer. Full stack
+              developers specialize in both front end and back end; We'll go
+              into more detail on what a full stack developer does later
+            </p>
+            <p>
+              Web developers are responsible for building a product that meets
+              both the needs of the customer and the needs of the client or end
+              user. Web developers collaborate with stakeholders, clients, and
+              designers to understand the vision: How should the final website
+              appear and function
+            </p>
+            <p>
+              A large part of web development also revolves around identifying
+              and fixing errors in order to continually improve and improve your
+              website or system. Therefore, web developers are the
+              problem-solvers, regularly coming out with workarounds and
+              solutions to keep things running smoothly.
+            </p>
+            <p>
+              Web developers are familiar with technology and understand how
+              computers and web servers operate. They are also very familiar
+              with many software programs, web applications and web programming
+              languages, such as hypertext markup language (HTML), JavaScript
+              (JS), Ruby on Rails, python, php and C++. They must be able to
+              communicate effectively, set goals and meet deadline
+            </p>
+            <div class="steps text-center"><strong>4</strong></div>
+          </div>
+          <div class="section">
+            <b class="text-primary">Types of Web Developers:</b>
+            <p>
+              <b>Front-end developers </b> A front-end developer is a web
+              developer that encodes the front-end for a website. While web
+              design is the way a website appears, front-end development is how
+              that design is actually implemented on the web.
+            </p>
+            <p>
+              <b>Backend developers</b> - A backend developer is someone who
+              builds and maintains the technology needed to run components that
+              enable the user-facing side of a website to exist. Their back-end
+              icon adds utility to everything the front end designer creates.
+            </p>
+            <p>
+              <b>Full stack developers</b> - Full stack developers understand
+              how every part of the web development process occurs and can guide
+              strategy and best practices. These developers will have an
+              increasingly important role in future web development, and they
+              will be able to take a look at the "big picture". They are
+              familiar with the server side as well as the client side user
+              experience.
+            </p>
+            <img
+              src="../assets/blogs/intro_to_webdev/webdev_types.PNG"
+              alt="web developers types"
+            />
+            <div class="steps text-center"><strong>5</strong></div>
+          </div>
+          <div class="section">
+            <b class="text-primary">Why should I become a Web Developer?</b>
+            <p>
+              This is one of the most frequently asked questions, and now we'll
+              give the reasons why you should start thinking about being a web
+              developer
+              <br /><br />
+              <b>a- </b>
+              You don't necessarily need a degree. Many successful web
+              developers are self-taught and do not have any formal
+              qualifications. With knowledge of a programming language and
+              experience in database management it is possible to enter the
+              field.
+              <br /><br /><b>b- </b>
+              The creative developers in general are the problem solvers.
+              Despite this, web developers are also able to create user
+              experiences.
+              <br /><br /><b>c- </b>
+              Becoming part of a community Perhaps more than any other field,
+              web development exposes its practitioners to countless online
+              communities. These communities are valuable resources and places
+              to interact and connect with like-minded people.
+              <br /><br /><b>d- </b>
+              Money! Demand for web developers continues to outpace supply. So
+              employers pay higher wages for the best talent available.
+              <br /><br /><b>e- </b>
+              You can work as a freelancer or as part of an organization. As a
+              freelancer, developers can pick and choose their projects and take
+              control of their careers.
+              <br /><br /><b>f- </b>
+              You can work remotely. The nature of web development means you can
+              work from anywhere in the world, on your own time - especially as
+              a freelancer.
+              <br /><br /><b>g- </b>
+              You can become a specialist Developers who greatly enjoy working
+              in a particular language can choose to specialize in and still
+              have a lot of work to do.
+              <br /><br /><b>h- </b>
+              It is a futuristic guide As web technology expands and evolves, so
+              does the demand for developers.
+              <br /><br /><b>i- </b>
+              It's fun With countless companies looking for new talent, there
+              are exciting opportunities to work in the field and gain creative
+              control and project ownership.
+              <br /><br /><b>j- </b>
+              You can expand into other areas web development skills are highly
+              transferable. The mobile sector, for example, has similar
+              interfaces, allowing web developers to easily move to mobile
+              development. Companies looking for new ways to interact with
+              customers are always looking for customer-facing web developers.
+            </p>
+            <div class="steps text-center"><strong>6</strong></div>
+          </div>
+          <div class="section">
+            <b class="text-primary">Tools you need to start Web Developemet:</b>
+            <p>
+              1- Browser: google chrome, opera, firefox ….. <br />
+              2- Text editor: vs code, atome, sublime. ……<br />
+              3- Git <br />
+              4- Github <br />
+              5- Stackoverflow <br />
+              6- W3school <br />
+              7- Computer <br />
+            </p>
+            <div class="steps text-center"><strong>7</strong></div>
+          </div>
+          <div class="section">
+            <b class="text-primary"
+              >Skills required to become a Web Developer:</b
+            >
+            <br />
+            <b class="text-success pl-3">what are the languages?</b>
+            <p class="pl-3">
+              In the world of web development, languages are the building blocks
+              that programmers use to create websites, applications, and
+              programs. There are all kinds of different languages, including
+              programming languages, markup languages, style sheet languages,
+              and database languages.
+            </p>
+            <b class="text-success">Programming Languages</b>
+            <div class="languages_section">
+              <p>
+                A programming language is basically a set of instructions and
+                commands that require a computer to produce a specific output.
+                Programmers use so-called "high-level" programming languages to
+                write source code. High-level languages use logical words and
+                symbols, making them easier for humans to read and understand.
+                High-level languages can be classified as either grouped or
+                interpreted languages
+              </p>
+              <p>
+                C ++ and Java, for example, are compiled in high-level
+                languages; They are first saved in a text-based format that can
+                be understood by human programmers rather than computers. For
+                the computer to run the source code, it must be converted into a
+                low-level language; Any machine code. Compiled languages tend to
+                be used to create software applications.
+              </p>
+              <p>
+                Interpreted languages like Perl and PHP do not need compilation.
+                Alternatively, the source code written in these languages can be
+                run through a compiler - a program that reads and executes the
+                code. Localized languages are generally used to run scripts,
+                such as those used to create content for dynamic websites.
+              </p>
+              <p>
+                Low-level languages are those that can be recognized and
+                implemented directly on computers; They do not need
+                interpretation or translation. Machine language and assembly
+                language are some common examples of low-level languages.
+              </p>
+              <p>
+                Some of the most popular programming languages for 2018 include
+                Java, C, C ++, Python, C #, JavaScript, PHP, Ruby, and Perl.
+                More information: A beginner's guide to the 10 most popular
+                programming languages
+              </p>
+            </div>
+            <b class="text-success">Markup languages</b>
+            <div class="languages_section">
+               <p>
+                Markup languages are used to define a text file format. In other words, the markup language tells the program that displays the text how to format the text. The markup languages are perfectly readable with the naked eye - they contain standard words - but the coding marks are not visible in the final output.
+
+               </p>
+               <p>The two most popular markup languages are HTML and XML. HTML stands for HyperText Markup Language and is used to create websites. When added to a plain text document, HTML tags describe how that document will be displayed by a web browser. To understand how HTML works, let's take the example of bold tags. The HTML version will be written as follows:
+
+               </p>
+               
+               <code>
+                 
+              &lt;b&gt; Make this sentence bold! &lt;/b&gt;
+
+ 
+               </code>
+               <p>
+                When the browser reads this, it knows to display that sentence in bold. This is what the user sees: <br> <b>Make this sentence bold!</b> 
+               </p>
+               <p>
+                XML stands for Extensible Markup Language. It is a very similar markup language to HTML; However, while HTML is designed to display data with an emphasis on its form, XML is only designed to store and communicate data. Unlike HTML, XML tags are not predefined; Instead, they were created by the author of the document. The goal of XML is to simplify data sharing and transmission, platform changes and data availability, as it provides a software and hardware-independent means of storing, transmitting, and sharing data.
+               </p>
+               
+            </div>
+            <b class="text-primary">Style Sheet Languages:</b>
+            <div class="languages_section">
+              <p>A style sheet is basically a set of stylistic rules. Style sheet languages are used, in the literal sense of the word, to design documents written in markup languages.
+
+              </p>
+              <p>Consider a document written in HTML and designed using CSS (Cascading Style Sheets), which is a style sheet language. HTML is responsible for the content and structure of a web page, while CSS determines how that content is presented visually. CSS can be used to add colors, change fonts, and insert backgrounds and borders, as well as pattern styles. CSS is also used to optimize web pages for responsive design, ensuring that they are adapted to whatever device the user uses.
+
+              </p>
+            </div>
+            <b class="text-success">Database Languages:</b>
+            <div class="languages_section">
+              <p>Languages are not only used to build websites, software, and applications; It is also used to create and manage databases.</p>
+              <p>
+                Databases are used to store huge amounts of data. Spotify music, for example, uses databases to store music files, as well as data about a user's listening preferences. Likewise, social media applications such as Instagram use databases to store user profile information; Every time a user updates their profile in some way, the application database will also be updated.
+                </p>
+              <p>
+                Databases are not designed to understand the same languages that applications are programmed into, so it is imperative to have a language they 
+              </p>
+            </div>
+            <b class="text-success">What are libraries and frameworks?</b>
+            <p>Web developers also work with libraries and frameworks. Despite a lot of confusion, they are not the same thing - although they exist to make it easier for a developer.
+
+            </p>
+            <p>Libraries and frameworks are essentially collections of pre-written code, but libraries are smaller and tend to be used for more specific use cases. The library contains a bunch of helpful code, grouped together for later reuse. The purpose of the library is to enable developers to reach the same end goal while writing less code to get there.</p>
+            <p>Let's take the example of JavaScript, the language, and jQuery, which is a JavaScript library. Instead of writing, say, ten lines of code in JavaScript, a developer can take the pre-written condensed version of the jQuery library - saving time and effort.</p>
+            <div class="steps text-center"><strong>7</strong></div>
+          </div>
+
+          <hr />
+          <!-- Resources -->
+          <div class="resources section">
+            <h3 class="text-dark text-center">
+              <strong>Resources</strong><br />
+            </h3>
+            <div class="row">
+              <div class="col-6">
+                <strong class="text-center">websites</strong> <br />
+                <hr />
+                <a href="">Github pages</a> <br />
+                <a href="">Medium.com</a> <br />
+              </div>
+              <div class="col-6">
+                <strong>Books</strong> <br />
+                <hr />
+              </div>
+            </div>
+          </div>
+
+          <hr />
+          <!-- OTHER BLOGS -->
+          <a href="../html/blogs.html"
+            ><strong class="text-center"><h2>Other blogs</h2></strong></a
+          >
+          <div class="row other-blogs">
+            <div class="col-12 col-md-6">
+              <div class="row">
+                <div class="col-6">
+                  <img
+                    src="../assets/blogs/github-pages/github-pages.jpg"
+                    alt="github pages"
+                    width="100%"
+                  />
+                </div>
+                <div class="col-6">learn git hub pages</div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="row">
+                <div class="col-6">
+                  <img
+                    src="../assets/blogs/github-pages/github-pages.jpg"
+                    alt="github pages"
+                    width="100%"
+                  />
+                </div>
+                <div class="col-6">learn git hub pages</div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="row">
+                <div class="col-6">
+                  <img
+                    src="../assets/blogs/github-pages/github-pages.jpg"
+                    alt="github pages"
+                    width="100%"
+                  />
+                </div>
+                <div class="col-6">learn git hub pages</div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="row">
+                <div class="col-6">
+                  <img
+                    src="../assets/blogs/github-pages/github-pages.jpg"
+                    alt="github pages"
+                    width="100%"
+                  />
+                </div>
+                <div class="col-6">learn git hub pages</div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="row">
+                <div class="col-6">
+                  <img
+                    src="../assets/blogs/github-pages/github-pages.jpg"
+                    alt="github pages"
+                    width="100%"
+                  />
+                </div>
+                <div class="col-6">learn git hub pages</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="type text-center"><strong>TECHNOLOGY</strong></div>
+          <div class="type-title text-center">
+            <i class="fa fa-star fa-2x mt-1"></i>
+          </div>
+        </div>
+        <div class="col-0 col-md-4 position-relative">
+          <div class="tab-content" id="tab-content">
+            <div class="content-title text-center">
+              <strong>Table of Content</strong>
+            </div>
+            <div class="content">
+              <a href="#1">. What is The Dropshipping</a> <br />
+              <a href="#2">. Benifits of Dropshipping</a> <br />
+              <a href="#3">. Disadvantages of Dropshipping</a> <br />
+              <a href="#4"
+                >. How much do I need to invest to start dropshipping?</a
+              >
+              <br />
+              <a href="#5">. SO, is Dropshipping worth it?</a> <br />
+              <a href="#6">. MORE INFORMATIONS</a> <br />
+              <a href="#7">. Courses</a> <br />
+              <a href="#8">. Resources</a> <br />
+
+              <a href="#11">. other Blogs</a> <br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="footer text-center">
+      <div class="row">
+        <div class="col-md-4">
+          <p class="footer-texts">
+            <br /><br /><strong
+              >© 2020 EDU Hustle All Rights Reserved. <br /><br />
+              FOLLOW US ON MEDIA</strong
+            >
+          </p>
+          <i class="fa fa-facebook fa-2x mx-2"></i
+          ><i class="fa fa-instagram fa-2x mx-2"></i
+          ><i class="fa fa-twitter fa-2x mx-2"></i
+          ><i class="fa fa-linkedin fa-2x mx-2"></i
+          ><i class="fa fa-youtube fa-2x mx-2"></i>
+        </div>
+        <div class="col-md-4 footer-logo">
+          <img src="../assets/logos/logo-white.png" alt="log" />
+        </div>
+        <div class="col-md-4">
+          <h4 class="footer-titles"><strong>About EDU Hustle</strong></h4>
+          <hr />
+          <p class="footer-texts">
+            <strong>
+              Most of my content includes affiliate links. When you click an
+              affiliate link, I may receive a commission for any products or
+              services you purchase through that link. It doesn’t cost you
+              anything extra, and in some cases, you may receive a discount
+              through my links.</strong
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/index.js"></script>
+  </body>
+</html>
